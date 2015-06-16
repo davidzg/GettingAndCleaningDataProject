@@ -21,7 +21,7 @@ if(!exists("msmTest")) msmTest <- read.table(msmTestFile, col.names = features$V
 
 msmVariables <- grepl("-mean[^Ff]|-std()",features$V2)
 train <- cbind(sjtTrain,actTrain,msmTrain[msmVariables])
-test <- cbind(sjtTest,actTest,msmTest[grepl("-mean[^Ff]|-std()",features$V2)])
+test <- cbind(sjtTest,actTest,msmTest[msmVariables])
 dt <- tbl_df(rbind(train,test))
 
 
