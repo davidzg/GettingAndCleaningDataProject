@@ -9,7 +9,7 @@ output: html_document
 
 ###Notes
 
-- Meassurement variables are normalized and bounded within [-1,1].
+- Measurement variables are normalized and bounded within [-1,1].
 - For more information about the variables, please refer to the [original dataset info](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 ###Variables
