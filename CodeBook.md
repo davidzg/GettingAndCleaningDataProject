@@ -1,22 +1,109 @@
 ---
 title: "CodeBook"
 author: "David Zapata"
-date: "16 de junio de 2015"
+date: "19 de junio de 2015"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Getting and cleaning data - course project codebook
+=============
+normalized and bounded within [-1,1]
+Variable|Description|extra
+|--|--|--|
+Subject
+Volunteer number 1-30
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Activity
+activity perform by a subject
+WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
-```{r}
-summary(cars)
-```
+tBodyAccMeanX
+tBodyAccMeanY
+tBodyAccMeanZ
 
-You can also embed plots, for example:
+tBodyAccStdX
+tBodyAccStdY
+tBodyAccStdZ
 
-```{r, echo=FALSE}
-plot(cars)
-```
+tGravityAccMeanX
+tGravityAccMeanY
+tGravityAccMeanZ
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+tGravityAccStdX
+tGravityAccStdY
+tGravityAccStdZ
+
+tBodyAccJerkMeanX
+tBodyAccJerkMeanY
+tBodyAccJerkMeanZ
+
+tBodyAccJerkStdX
+tBodyAccJerkStdY
+tBodyAccJerkStdZ
+
+tBodyGyroMeanX
+tBodyGyroMeanY
+tBodyGyroMeanZ
+
+tBodyGyroStdX
+tBodyGyroStdY
+tBodyGyroStdZ
+
+tBodyGyroJerkMeanX
+tBodyGyroJerkMeanY
+tBodyGyroJerkMeanZ
+
+tBodyGyroJerkStdX
+tBodyGyroJerkStdY
+tBodyGyroJerkStdZ
+
+tBodyAccMagMean
+tBodyAccMagStd
+
+tGravityAccMagMean
+tGravityAccMagStd
+
+tBodyAccJerkMagMean
+tBodyAccJerkMagStd
+
+tBodyGyroMagMean
+tBodyGyroMagStd
+
+tBodyGyroJerkMagMean
+tBodyGyroJerkMagStd
+
+fBodyAccMeanX
+fBodyAccMeanY
+fBodyAccMeanZ
+
+fBodyAccStdX
+fBodyAccStdY
+fBodyAccStdZ
+
+fBodyAccJerkMeanX
+fBodyAccJerkMeanY
+fBodyAccJerkMeanZ
+
+fBodyAccJerkStdX
+fBodyAccJerkStdY
+fBodyAccJerkStdZ
+
+fBodyGyroMeanX
+fBodyGyroMeanY
+fBodyGyroMeanZ
+
+fBodyGyroStdX
+fBodyGyroStdY
+fBodyGyroStdZ
+
+fBodyAccMagMean
+fBodyAccMagStd
+
+fBodyAccJerkMagMean
+fBodyAccJerkMagStd
+
+fBodyGyroMagMean
+fBodyGyroMagStd
+
+fBodyGyroJerkMagMean
+fBodyGyroJerkMagStd
