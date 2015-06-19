@@ -1,4 +1,3 @@
-#setwd("E:/DATA_SCIENCE/3.GettingAndCleaningData/course_project")
 library(reshape2)
 
 msmTrainFile <- "./UCI HAR Dataset/train/X_train.txt"
