@@ -1,5 +1,3 @@
-#setwd("E:/DATA_SCIENCE/3.GettingAndCleaningData/course_project")
-
 ## Data Files
 msmTrainFile <- "./UCI HAR Dataset/train/X_train.txt"
 msmTestFile <- "./UCI HAR Dataset/test/X_test.txt"
