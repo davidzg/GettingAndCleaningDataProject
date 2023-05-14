@@ -5,14 +5,14 @@ date: "19 de junio de 2015"
 output: html_document
 ---
 
-##Getting and cleaning data - course project codebook
+## Getting and cleaning data - course project codebook
 
-###Notes
+### Notes
 
 - Measurement variables are normalized and bounded within [-1,1].
 - For more information about the variables, please refer to the [original dataset info](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-###Variables
+### Variables
 
 Variable|Description                    
 --------|-----------------              
