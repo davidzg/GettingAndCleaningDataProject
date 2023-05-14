@@ -4,7 +4,7 @@ author: "David Zapata"
 date: "16 de junio de 2015"
 output: html_document
 ---
-###Read this first
+### Read this first
 This project reads datasets from different sources and merges and cleans the data in order to have a tidy data set as final result.
 The original data source can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). To execute the `run_analysis.R` script, the data must be unzipped in the same folder as the script file.
 
@@ -31,8 +31,8 @@ Note that each variable has the mean and standard deviation measurement; this co
 Variables `meanFreq` and `angles` were excluded because they are a different kind of measurement.
 
 
-##*Run_analysis.R* Step By Step
-###Input
+## *Run_analysis.R* Step By Step
+### Input
 These files are the files needed to get final tidy data frame:
 
 Data Frame|File name			  |description
@@ -45,7 +45,7 @@ sjtTrain 	|subject_train.txt|Subject data for the train group.
 sjtTest 	|subject_test.txt |Subject data for the test group.
 features 	|features.txt 		|List of measurements data for the test and train groups.
 
-###Steps
+### Steps
 1. Read the input files. Please note in the code that the column names are loaded as well in this step. If well the column names are not in a human readable format yet, it helps in the execution of the step 7.
 2. Do a subset of `msmTrain` and `msmTest` extracting only the means and standard deviations columns. this is done by a regular expression filter. I preferred to do this step first in order to have a smaller data set, which makes the process easier and faster (avoid to process unwanted data).
 3. Merge the data sets `sjtTest`,`actTest`,`msmTest` by column
@@ -58,6 +58,6 @@ features 	|features.txt 		|List of measurements data for the test and train grou
 	+ make the x,y,z characters upper-case excluding the `.` and special characters.
 	+ replace `BodyBody` for `Body`.
 
-###Output
+### Output
 the output of this script is a tiny data frame, containing the average of the means and standard deviation measurements for each subject in each activity. This was done using the function `aggregate`, that splits the data frame by a list of variables (Subject and Activity) and performs the average.
 The final result is written in the text file `courseProject.txt`.
